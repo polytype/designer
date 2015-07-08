@@ -1,0 +1,19 @@
+table.space:
+    
+    example_one:
+        id: 1
+        name: one
+        account_name: example
+        description: The first example
+
+    example_two:
+        id: 2
+        name: two
+        account_name: example
+        description: The second example
+
+    second_cool:
+        id: 3
+        name: cool
+        account_name: second
+        description: The second cool example

@@ -1,0 +1,29 @@
+{% extends "layout.html.twig" %}
+
+{% block content %}
+    <h1>Spaces ({{spaces|length}})</h1>
+
+    <ul>
+        {% for space in spaces %}
+        <li>
+            <a href="{#{ path("spaces_view", {"spaceName": space.getName() })}#}">#{{ space.id }}: {{ space.accountName }}/{{ space.name }}</a>
+            
+            {#<a href="{{ path('spaces_edit', {'spaceName': space.getName()}) }}" class="btn btn-primary" role="button">
+                <i class="fa fa-edit"></i>
+                Edit
+            </a>
+            #}
+            <br />
+            <i>{{space.description}}</i>
+        </li>
+        {% endfor %}
+    </ul>
+
+    <div class="buttonbox">
+        {#<a href="{{ path('spaces_add') }}" class="btn btn-primary" role="button">
+            <i class="fa fa-plus"></i>
+            Add
+        </a>
+        #}
+    </div>
+{% endblock %}

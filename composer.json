@@ -1,0 +1,37 @@
+{
+    "name": "polytype/designer",
+    "description": "Polytype Designer",
+    "homepage": "https://github.com/polytype/designer",
+    "keywords": ["polytype", "codelists", "valuesets", "dynamic", "linkorb"],
+    "type": "application",
+    "authors": [
+        {
+            "name": "LinkORB",
+            "email": "development@linkorb.com",
+            "role": "Development"
+        }
+    ],
+    "require": {
+        "silex/silex": "2.0.*@dev",
+        "symfony/yaml": "~2.6",
+        "symfony/config": "~2.6",
+        "symfony/security": "~2.6",
+        "symfony/console": "~2.6",
+        "symfony/form": "~2.7",
+        "symfony/translation": "~2.7",
+        "twig/twig": ">=1.8,<2.0-dev",
+        "symfony/twig-bridge": "~2.7",
+        "userbase/client": "~0.0"
+    },
+    "require-dev": {
+        "dbtk/schema-loader": "~1.0",
+        "linkorb/database-manager": "dev-master",
+        "nelmio/alice": "dev-master",
+        "linkorb/haigha": "~1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Polytype\\Designer\\": "src/"
+        }
+    }
+}

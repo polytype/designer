@@ -1,0 +1,20 @@
+frontpage:
+    path: /
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::frontpageAction }
+
+account_index:
+    path: /{accountName}
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::indexAction }
+
+things_add:
+    path: /things/add
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::addAction }
+things_view:
+    path: /things/{thingId}
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::viewAction }
+things_edit:
+    path: /things/{thingId}/edit
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::editAction }
+things_delete:
+    path: /things/{thingId}/delete
+    defaults:  { _controller: Polytype\Designer\Controller\SpaceController::deleteAction }

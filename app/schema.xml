@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema>
+    <table name="space" primaryKey="id">
+        <column name="id" type="int" autoincrement="true"/>
+        <column name="name" type="varchar(64)" />
+        <column name="account_name" type="varchar(64)" />
+        <column name="description" type="text" />
+    </table>
+</schema>
